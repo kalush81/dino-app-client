@@ -3,11 +3,13 @@
   padding: 5rem;
   margin: 2rem;
   display: flex;
-  flex-direction: row;
+  overflow: scroll;
 }
 
 .dinosaurList {
+  max-width: 100%;
   padding: 1rem;
+  border: 5px solid rebeccapurple;
 }
 
 .dinosaurList img {
@@ -45,3 +47,11 @@
   text-align: center;
   padding: 6rem;
 }
+
+/* .DinosaurListImage {
+  border: 2px solid green;
+}
+
+.imagesContainer {
+  border: 2px solid brown;
+} */

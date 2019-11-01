@@ -12,6 +12,7 @@ class DinosaurListContainer extends Component {
   render() {
     return (
       <DinosaursList 
+      className='imagesContainer'
       dinosaurs={this.props.dinosaurs}
       />
     )

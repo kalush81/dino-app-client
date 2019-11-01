@@ -12,7 +12,7 @@ export default class DinosaursList extends Component {
     const { id, name, image, geological_era } = dinosaur;
     return (
       <li key={id}>
-        <img className="DinosaurListImages" alt={name} src={image} />
+        <img className="DinosaurListImage" alt={name} src={image} />
         <Link to={`dinosaurs/${id}`}>
           <Button variant="contained" color="primary">
             {`${name}, from geological era: ${geological_era}.`}
