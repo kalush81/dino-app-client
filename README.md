@@ -6,4 +6,4 @@ In the project directory, you can run:
 
 ### `npm start`
 
-### database for this project is here 
+### database for this project is here (https://github.com/kalush81/dino-app-server)
