@@ -59,8 +59,6 @@ export default class DinosaurusList extends Component {
       this.setState({era: name}) 
     }
 
-    console.log("test", filterMax("CRETACEOUS"));
-
     return (
       <div className="dinosaurList">
         <main>

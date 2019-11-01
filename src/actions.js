@@ -14,7 +14,6 @@ export const getDinos = () => (dispatch, getState) => {
     if (!dinosaurs.length) {
       request(`${baseUrl}`)
       .then(response => {
-        console.log(response)
         const action = dinosaursFetch(response.body)
         dispatch(action)
       })
