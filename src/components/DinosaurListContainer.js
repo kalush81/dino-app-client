@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { getDinos } from '../actions'
 import { connect } from 'react-redux'
-import DinosaurusList from './DinosaurusList'
+import DinosaursList from './DinosaursList'
 
 class DinosaurListContainer extends Component {
 
@@ -11,7 +11,7 @@ class DinosaurListContainer extends Component {
 
   render() {
     return (
-      <DinosaurusList 
+      <DinosaursList 
       dinosaurs={this.props.dinosaurs}
       />
     )

@@ -8,7 +8,7 @@ export default class Home extends Component {
       <div>
         <main className="home">
         <h1>Welcome to this Dinosaur Database</h1>
-        <Link to='/dinosaurus'>Click Here To Acces Our Database</Link>
+        <Link to='/dinosaurs'>Click Here To Acces Our Database</Link>
         </main>
       </div>
     )

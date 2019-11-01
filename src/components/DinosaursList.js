@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Button from "@material-ui/core/Button";
 
-export default class DinosaurusList extends Component {
+export default class DinosaursList extends Component {
 
   state = {
     era: ''
@@ -13,7 +13,7 @@ export default class DinosaurusList extends Component {
     return (
       <li key={id}>
         <img className="DinosaurListImages" alt={name} src={image} />
-        <Link to={`dinosaur/${id}`}>
+        <Link to={`dinosaurs/${id}`}>
           <Button variant="contained" color="primary">
             {`${name}, from geological era: ${geological_era}.`}
           </Button>
@@ -25,23 +25,18 @@ export default class DinosaurusList extends Component {
   render() {
     const { dinosaurs } = this.props;
 
-    const filterMax = dinosaur => {
-      
+    const filterMax = dinosaur => { 
       const filterCretaceous = dinosaurs.filter(
         dinosaur => dinosaur.geological_era === "CRETACEOUS"
       );
-      console.log("Filter1", filterCretaceous);
       const filterJurassic = dinosaurs.filter(
         dinosaur => dinosaur.geological_era === "JURASSIC"
       );
-      console.log("Filter2", filterJurassic);
       const filterTriassic = dinosaurs.filter(
         dinosaur => dinosaur.geological_era === "TRIASSIC"
       );
-      console.log("Filter3", filterTriassic);
 
       const mapDinos = dinosaurs.map(this.renderDinosaurs);
-      console.log("", mapDinos);
 
       switch (dinosaur) {
         case "CRETACEOUS":
